@@ -70,9 +70,21 @@
                                     <!--second level end-->
                                 </li>
                                 <li>
-                                    <a href="listing.html">Listings </a>
+                                    <a href="#">Listings <i class="fa fa-caret-down"></i></a>
                                     <!--second level -->
-                                   
+                                    <ul>
+                                        <li><a href="listing.html">Column map</a></li>
+                                
+                                        <li>
+                                            <a href="#">Single <i class="fa fa-caret-down"></i></a>
+                                            <!--third  level  -->
+                                            <ul>
+                                                <li><a href="listing-single.html">Style</a></li>
+                                                
+                                            </ul>
+                                            <!--third  level end-->
+                                        </li>
+                                    </ul>
                                     <!--second level end-->
                                 </li>
                                 <li>
@@ -112,7 +124,14 @@
                                     <source src="video/4.mp4" type="video/mp4">
                                 </video>
                             </div>
-                                   
+                                    <!--
+                                        Vimeo code
+
+                                         <div  class="background-vimeo" data-vim="97871257"> </div> -->
+                                    <!--
+                                        Youtube code
+
+                                         <div  class="background-youtube-wrapper" data-vid="Hg5iNVSp2z8" data-mv="1"> </div> -->
 
                         </div>
                         <div class="overlay"></div>
@@ -139,7 +158,6 @@
                                                 <option>Restaurants</option>
                                                 <option>Fitness</option>
                                                 <option>Events</option>
-                                                <option>Freelancers</option>
                                             </select>
                                         </div>
                                         <button class="main-search-button" onclick="window.location.href='listing.html'">Search</button>
@@ -213,7 +231,7 @@
                                             <div class="bg"  data-bg="images/all/22.jpg"></div>
                                             <div class="listing-counter"><span>7 </span> Locations</div>
                                             <div class="listing-item-cat">
-                                                <h3><a href="listing.html">Hotels & Resturents</a></h3>
+                                                <h3><a href="listing.html">Hotels</a></h3>
                                                 <p>Constant care and attention to the patients makes good record</p>
                                             </div>
                                         </div>
@@ -971,7 +989,6 @@
                                 <div class="tab">
                                     <div id="tab-2" class="tab-content">
                                         <div class="custom-form">
-<<<<<<< HEAD
                                             <form method="post" name="registerform" action="process_form.php" class="main-register-form" id="main-register-form2">
                                                 <label>First Name * </label>
                                                 <input name="name" type="text" onClick="this.select()" value="">
@@ -982,22 +999,6 @@
                                                 <label>Password *</label>
                                                 <input name="password" type="password" onClick="this.select()" value="">
                                                 <button type="submit" class="log-submit-btn"><span>Register</span></button>
-=======
-                                            <form method="post" action="index.php" name="registerform" class="main-register-form" id="main-register-form2">
-                                                <label for="first_name">First Name:</label>
-                                                <input type="text" id="first_name" name="first_name">
-                                                
-                                                <label for="second_name">Second Name:</label>
-                                                <input type="text" id="second_name" name="second_name">
-                                                                                            
-                                                <label for="email">Email Address *</label>
-                                                <input id="email" name="email" type="email" value="" required>
-                                                
-                                                <label for="password">Password *</label>
-                                                <input id="password" name="password" type="password" value="" required>
-                                                
-                                                <button type="submit" name="log-submit-btn" class="log-submit-btn"><span>Register</span></button>
->>>>>>> dae65f57d33a40189494b649ed94bc377b6bb42e
                                             </form>
                                             
                                         </div>
