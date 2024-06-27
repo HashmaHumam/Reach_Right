@@ -1,5 +1,5 @@
 <?php
-// Database connection parameters
+/* // Database connection parameters
 $servername = "localhost"; // Change this to your database server
 $username = "root"; // Change this to your database username
 $password = ""; // Change this to your database password
@@ -30,5 +30,5 @@ if ($conn->query($sql) === TRUE) {
 }
 
 // Close connection
-$conn->close();
+$conn->close(); */
 ?>
