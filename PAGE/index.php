@@ -67,7 +67,7 @@ if (isset($_POST['log-submit-btn'])) {
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) == 1) {
-        header("Location: index2.html");
+        header("Location: index-after-login.html");
         exit();
     } else {
         echo "Login failed. Please check your email and password.";
