@@ -178,6 +178,9 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <form class="" action="listing.php" method="post" autocomplete="off">
+
                                     <div class="col-md-9">
                                         <!-- profile-edit-container--> 
                                         <div class="profile-edit-container add-list-container">
@@ -186,18 +189,18 @@
                                             </div>
                                             <div class="custom-form">
                                                 <label>Listing Title <i class="fa fa-briefcase"></i></label>
-                                                <input type="text" placeholder="Name of your business" value=""/>
+                                                <input type="text" name="name" placeholder="Name of your business" value=""/>
                                                 <div class="row">
                                                     <div class="col-md-6">
-                                                        <label>Category</label>
-                                                        <select data-placeholder="All Categories" class="chosen-select" >
+                                                        <!-- <label>Category</label>
+                                                        <select data-placeholder="All Categories" name="category_id" class="chosen-select" >
                                                             <option>All Categories</option>
-                                                            <option>Shops</option>
-                                                            <option>Hotels</option>
-                                                            <option>Restaurants</option>
-                                                            <option>Fitness</option>
-                                                            <option>Events</option>
-                                                        </select>
+                                                            <option value="Shops">Shops</option>
+                                                            <option value="Hotels">Hotels</option>
+                                                            <option value="Restaurants">Restaurants</option>
+                                                            <option value="Fitness">Fitness</option>
+                                                            <option value="Events">Events</option>
+                                                        </select> -->
                                                     </div>
                                                     <div class="col-md-6">
                                                         <label>Keywords <i class="fa fa-key"></i></label>
@@ -214,7 +217,7 @@
                                             </div>
                                             <div class="custom-form">
                                                 <label>Address<i class="fa fa-map-marker"></i></label>
-                                                <input type="text" placeholder="Address of your business" value=""/>
+                                                <input type="text" name="address" placeholder="Address of your business" value=""/>
                                                 <div class="row">
                                                 	<div class="col-md-6">
                                                         <label>Latitude:<i class="fa fa-map-marker"></i></label>
@@ -229,20 +232,20 @@
                                                     <div id="singleMap" data-latitude="40.7427837" data-longitude="-73.11445617675781"></div>
                                                 </div>
                                                 <label>Location</label>
-                                                <select data-placeholder="Location" class="chosen-select" >
+                                                <select data-placeholder="Location" class="chosen-select" name="location_id" >
                                                     <option>All Locations</option>
-                                                    <option>Bronx</option>
-                                                    <option>Brooklyn</option>
-                                                    <option>Manhattan</option>
-                                                    <option>Queens</option>
-                                                    <option>Staten Island</option>
+                                                    <option value="Colombo">Colombo</option>
+                                                    <option value="Galle">Galle</option>
+                                                    <option value="Kandy">Kandy</option>
+                                                    <option value="Kurunegala">Kurunegala</option>
+                                                    <option value="Matara">Matara</option>
                                                 </select>
                                                 <label>Phone<i class="fa fa-phone"></i></label>
-                                                <input type="text" placeholder="Your Phone" value=""/>
+                                                <input type="text" name="phone_number" placeholder="Your Phone" value=""/>
                                                 <label>Email<i class="fa fa-envelope-o"></i></label>
-                                                <input type="text" placeholder="Your Email" value=""/>
+                                                <input type="text" name="email" placeholder="Your Email" value=""/>
                                                 <label>Website<i class="fa fa-globe"></i></label>
-                                                <input type="text" placeholder="Your Website" value=""/>
+                                                <input type="text" name="website" placeholder="Your Website" value=""/>
                                             </div>
                                         </div>
                                         <!-- profile-edit-container end-->                                        
@@ -489,14 +492,18 @@
                                             </div>
                                             <div class="custom-form">
                                                 <label>Facebook <i class="fa fa-facebook"></i></label>
-                                                <input type="text" placeholder="https://www.facebook.com/" value=""/>
+                                                <input type="text" name="Facebook" placeholder="https://www.facebook.com/" value=""/>
+
                                                 <label>Twitter<i class="fa fa-twitter"></i>  </label>
-                                                <input type="text" placeholder="https://twitter.com/" value=""/>
-                                                <label>Vkontakte<i class="fa fa-vk"></i>  </label>
-                                                <input type="text" placeholder="vk.com" value=""/>
+                                                <input type="text" name="Twitter" placeholder="https://twitter.com/" value=""/>
+
+                                                <label>Instagram<i class="fa fa-vk"></i>  </label>
+                                                <input type="text" name="Instagram" placeholder="https://Instagram.com" value=""/>
+
                                                 <label> Whatsapp <i class="fa fa-whatsapp"></i>  </label>
-                                                <input type="text" placeholder="https://www.whatsapp.com" value=""/>
-                                                <button class="btn  big-btn  color-bg flat-btn">Save Changes<i class="fa fa-angle-right"></i></button>
+                                                <input type="text" name="Whatsapp" placeholder="https://www.whatsapp.com" value=""/>
+
+                                                <button class="btn  big-btn  color-bg flat-btn" type="submit" name="submit">Save Changes<i class="fa fa-angle-right"></i></button>
                                             </div>
                                         </div>
                                         <!-- profile-edit-container end-->   
@@ -508,6 +515,7 @@
                         <!--container end -->
                     </section>
                     <!-- section end -->	
+                </form>
                     <div class="limit-box fl-wrap"></div>
                     <!--section -->
                     <section class="gradient-bg">
@@ -640,5 +648,5 @@
 		<script type="text/javascript" src="js/map-add.js"></script>
     </body>
 
-<!-- Mirrored from citybook.kwst.net/dashboard-add-listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 04 Jun 2024 07:54:02 GMT -->
+
 </html>
