@@ -52,7 +52,7 @@ if (isset($_POST['log-submit-btn'])) {
 
 //     $conn->close();
 // }
-<?php
+
 if (isset($_POST['log-submit-btn'])) {
     $conn = mysqli_connect('localhost', 'root', '', 'reachrightsite');
 
